@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+
+
+.search {
+  border-color: #20c997;
+  box-shadow: none !important;
+  background-color: transparent;
+  border: 2px solid #20c997;
+  width: inherit;
+  transition: .2s linear;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search:focus {
+  border-color: #20c997;
+  background-color: transparent;
+  color: #20c997;
+  transition: .2s linear;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn-coustom {
+  background-color: #20c997;
+  border-color: #20c997;
+  color: #fff;
+  box-shadow: none !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn-coustom:hover {
+  background-color: #20c997;
+  border-color: #20c997;
 }
 
-.App-link {
-  color: #61dafb;
+
+.navbar-brand{
+	margin-left: 20px;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 2px;
+	font-family: Operator Mono;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-brand>span{
+    font-weight: 400;
+}
+
+ul > li {
+	font-family: Operator Mono;
+}
+
+.search-box {
+    margin-right: 20px;
+}
+
+.toggle {
+	border: none;
+	box-shadow: none !important;
+	outline: none !important;
+	/* border-radius: ; */
+}
+.radious {
+	border-radius: 5px;
 }
