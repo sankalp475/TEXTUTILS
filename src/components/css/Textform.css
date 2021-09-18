@@ -1,0 +1,19 @@
+.textarea {
+	resize: none !important;
+	/* box-shadow: none !important; */
+	/* width: inherit; */
+	height: 230px !important;
+	resize: none !important;
+	border: 2px solid #cacaca;
+	/* box-shadow: 6px 6px 12px #b8b9be,-6px -6px 12px #fff!important; */
+}
+.textarea:focus{
+	border-color: #20c997;
+}
+
+.font {
+	font-family: Operator Mono;
+}
+
+/* textarea {
+} */
