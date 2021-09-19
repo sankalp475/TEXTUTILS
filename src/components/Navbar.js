@@ -33,12 +33,12 @@ function Navbar(props) {
 						className="form-check-input padd"
 						type="checkbox"
 						id="flexSwitchCheckChecked"
-						onClick={props.ThemeMode}
+						onClick={props.ToggleTheme}
 					/>
 					<label htmlFor="checkbox" className={`text-${(props.ThemeMode === 'light') ? 'dark' : 'light'}`}>MODE</label>
 				</div>
 				<div className="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul className="navbar-nav me-auhref mb-2 mb-lg-0">
+					<ul className="navbar-nav mr-auto mb-2 mb-lg-0">
 						<li className="nav-item">
 							<a className="nav-link active" aria-current="page" href="/">Home</a>
 						</li>

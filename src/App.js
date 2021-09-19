@@ -55,8 +55,7 @@ function App() {
 	return (
 		<>
 			{/* <Router> */}
-				<Navbar title="textutils" about="about" aboutUrl="/" ThemeMode={ThemeMode} ToggleTheme={ToggleTheme}
-				/>
+				<Navbar title="textutils" about="about" aboutUrl="/" ThemeMode={ThemeMode} ToggleTheme={ToggleTheme}/>
 				{/* <Switch> */}
 					{/* <Route exact path="/about"> */}
 					    {/* <div className="container" >
