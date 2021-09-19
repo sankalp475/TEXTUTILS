@@ -62,7 +62,7 @@ function About(props) {
 					</div>
 				</div>
 			</div>
-			<button className={`my-3 bg-${(props.Mode === 'light')?'dark':'transparent'}`} style={About_button}>Enable Dark Mode</button>
+			<button className={`my-3 bg-${(props.Mode === 'light')?'dark':'dark'}`} style={About_button}>Enable Dark Mode</button>
 		</div >
 	)
 }

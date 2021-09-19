@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types'
-import { useState } from 'react'
-
+import { Link } from 'react-router-dom'
 function Navbar(props) {
 
 
@@ -14,19 +13,17 @@ function Navbar(props) {
 		textTransform: 'uppercase'
 	}
 
-	// const classNAV = {
-	// 	class1: 'navbar navbar-expand-lg navbar-light bg-light box_shadow',
-	// 	class2: 'navbar navbar-expand-lg navbar-dark bg-dark box_shadow',
-	// }
+
+
 
 	return (
 
 		<nav className={`navbar navbar-expand-lg navbar-${props.ThemeMode} bg-${props.ThemeMode} ${(props.ThemeMode === 'light')? 'box_shadow' : 'light'}`}>
 
 			<div className="container-fluid ">
-				<a className="navbar-brand" href="/">
+				<Link className="navbar-brand" to="/">
 					{props.title}
-				</a>
+				</Link>
 				<button className="navbar-toggler toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span className="navbar-toggler-icon"></span>
 				</button>
@@ -43,10 +40,10 @@ function Navbar(props) {
 				<div className="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul className="navbar-nav me-auto mb-2 mb-lg-0">
 						<li className="nav-item">
-							<a className="nav-link active" aria-current="page" href="/">Home</a>
+							<Link className="nav-link active" aria-current="page" to="/">Home</Link>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link" href={props.aboutUrl}>{props.about}</a>
+							<Link className="nav-link" to='/about'>{props.about}</Link>
 						</li>
 					</ul>
 					<form className="d-flex search-box">
