@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 function Navbar(props) {
 
 
@@ -18,37 +18,45 @@ function Navbar(props) {
 
 	return (
 
-		<nav className={`navbar navbar-expand-lg navbar-${props.ThemeMode} bg-${props.ThemeMode} ${(props.ThemeMode === 'light')? 'box_shadow' : 'light'}`}>
+		<nav
+			className={`
+			     navbar navbar-expand-lg
+				 navbar-${props.ThemeMode}
+				 bg-${props.ThemeMode}
+				 ${(props.ThemeMode === 'light') ?
+					'box_shadow'
+					: 'light'}`
+			}>
 
 			<div className="container-fluid ">
-				<Link className="navbar-brand" to="/">
+				<a className="navbar-brand" href="/">
 					{props.title}
-				</Link>
-				<button className="navbar-toggler toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span className="navbar-toggler-icon"></span>
-				</button>
+				</a>
+				<buthrefn className="navbar-hrefggler hrefggle" type="buthrefn" data-bs-hrefggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="hrefggle navigation">
+					<span className="navbar-hrefggler-icon"></span>
+				</buthrefn>
 
 			    <div className="form-check form-switch btn-tgl">
 					<input
 						className="form-check-input padd"
 						type="checkbox"
 						id="flexSwitchCheckChecked"
-						onClick={props.ToggleTheme}
+						onClick={props.hrefggleTheme}
 					/>
 					<label htmlFor="checkbox" className={`text-${(props.ThemeMode === 'light')? 'dark' : 'light'}`}>MODE</label>
 			    </div>
 				<div className="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul className="navbar-nav me-auto mb-2 mb-lg-0">
+					<ul className="navbar-nav me-auhref mb-2 mb-lg-0">
 						<li className="nav-item">
-							<Link className="nav-link active" aria-current="page" to="/">Home</Link>
+							<a className="nav-link active" aria-current="page" href="/">Home</a>
 						</li>
 						<li className="nav-item">
-							<Link className="nav-link" to='/about'>{props.about}</Link>
+							<a className="nav-link" href='/about'>{props.about}</a>
 						</li>
 					</ul>
 					<form className="d-flex search-box">
 						<input className="form-control me-2 search" type="search" placeholder="Search" aria-label="Search" />
-						<button style={btn_styled}>serach</button>
+						<buthrefn style={btn_styled}>serach</buthrefn>
 					</form>
 				</div>
 

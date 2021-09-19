@@ -1,15 +1,15 @@
-import About from './components/About';
+// import About from './components/About';
 import './components/css/App.css';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import { useState } from 'react'
 import Alert from './components/Alert';
-import {
-	BrowserRouter as Router,
-	Switch,
-	Route,
-	Link
-} from "react-router-dom";
+// import {
+// 	BrowserRouter as Router,
+// 	Switch,
+// 	Route,
+// 	Link
+// } from "react-router-dom";
 
 function App() {
 	const [ThemeMode, setThemeMode] = useState('light');
@@ -54,18 +54,18 @@ function App() {
 
 	return (
 		<>
-			<Router>
+			{/* <Router> */}
 				<Navbar title="textutils" about="about" aboutUrl="/" ThemeMode={ThemeMode} ToggleTheme={ToggleTheme}
 				/>
-				<Switch>
-					<Route exact path="/about">
-					    <div className="container" >
+				{/* <Switch> */}
+					{/* <Route exact path="/about"> */}
+					    {/* <div className="container" >
 							<Alert Alert={alert} />
 
 						    <About ThemeMode={ThemeMode} defaultValue='light' />
-						</div>
-					</Route>
-					<Route exact path="/">
+						</div> */}
+					{/* </Route> */}
+					{/* <Route exact path="/"> */}
 						<div className="container" >
 							<Alert Alert={alert} />
 							<TextForm
@@ -73,9 +73,9 @@ function App() {
 								Mode={ThemeMode}
 							/>
 						</div>
-					</Route>
-				</Switch>
-			</Router>
+					{/* </Route> */}
+				{/* </Switch> */}
+			{/* </Router> */}
 		</>
 	);
 }
