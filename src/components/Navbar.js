@@ -21,7 +21,7 @@ function Navbar(props) {
 		<nav className={` navbar navbar-expand-lg navbar-${props.ThemeMode} bg-${props.ThemeMode}  ${(props.ThemeMode === 'light') ? 'box_shadow' : 'light'}`}>
 
 			<div className="container-fluid ">
-				<a className="navbar-brand" href="/#">
+				<a className="navbar-brand" href="#">
 					{props.title}
 				</a>
 				<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
